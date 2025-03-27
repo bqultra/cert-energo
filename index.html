@@ -264,9 +264,15 @@
     </div>
   </section>
 
-  <!-- SEKCA „Jak to działa?” -->
-<section id="jak-to-dziala" class="py-20 bg-white scroll-mt-20">
-    <div class="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-12">
+ <!-- SEKCA „Jak to działa?” -->
+ <section id="jak-to-dziala" class="py-20 bg-white scroll-mt-20 relative overflow-hidden">
+    <!-- Duży napis w tle -->
+    <h2 class="absolute text-[140px] lg:text-[200px] font-bold text-brandNavy opacity-5 z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none">
+      Zamówienie
+    </h2>
+  
+    <div class="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-12 relative z-10">
+      
       <!-- Lewa kolumna: tekst -->
       <div class="lg:w-1/2">
         <h2 class="text-3xl sm:text-4xl font-bold text-brandNavy mb-4">Jak to działa?</h2>
@@ -274,7 +280,6 @@
           Zamówienie świadectwa energetycznego online to szybki i wygodny proces. Wystarczy wypełnić formularz, a my zajmiemy się resztą — od analizy po wystawienie certyfikatu.
         </p>
   
-        <!-- Kroki -->
         <ol class="space-y-6">
           <li class="flex items-start gap-4">
             <div class="text-brandOrange font-bold text-xl">1.</div>
@@ -307,16 +312,24 @@
         </ol>
       </div>
   
-      <!-- Prawa kolumna: miejsce na fotografię -->
-      <div class="lg:w-1/2">
-        <div class="w-full h-[400px] rounded-xl shadow-md overflow-hidden">
+      <!-- Prawa kolumna: obraz + dekoracje -->
+      <div class="lg:w-1/2 relative">
+        <!-- Dekoracje -->
+        <div class="absolute top-6 left-6 w-full h-[400px] bg-brandOrange rounded-xl z-0"></div>
+        <div class="absolute top-12 left-12 w-full h-[400px] bg-white rounded-xl opacity-30 z-0"></div>
+  
+        <!-- Obraz -->
+        <div class="relative z-10 w-full h-[400px] rounded-xl shadow-xl overflow-hidden">
           <img src="tablet.png" alt="Tablet" class="w-full h-full object-cover" />
         </div>
       </div>
+  
     </div>
   </section>
   
-  <section id="cennik" class="py-20 bg-white scroll-mt-20">
+  
+  <!-- SEKCA: Cennik -->
+  <section id="cennik" class="pt-10 py-20 bg-white scroll-mt-20">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <!-- Nagłówek i opis -->
       <div class="text-center mb-12">
@@ -391,8 +404,49 @@
       </div>
     </div>
   </section>
+
+<!-- SEKCA: Certyfikat -->
+<section id="certyfikat" class="relative pt-10 py-20 bg-white scroll-mt-20 overflow-hidden">
+        <!-- Duży napis w tle -->
+        <h2 class="absolute text-[140px] lg:text-[250px] font-bold text-brandNavy opacity-5 z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none">
+            Certyfikat
+          </h2>
+
+    <!-- Ikona -->
+    <div class="flex justify-center mb-4">
+        <img src="certyfikat-ikona.png" alt="Ikona certyfikatu" class="w-16 h-16">
+      </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 relative z-10 text-center">
+      <h2 class="text-sm font-semibold uppercase tracking-wider text-brandNavy mb-2">Dlaczego to ważne</h2>
+      <h3 class="text-3xl sm:text-4xl font-bold text-brandNavy mb-6">Czym jest certyfikat energetyczny?</h3>
+      <p class="text-gray-700 text-base sm:text-lg mb-10 max-w-2xl mx-auto">
+        Certyfikat energetyczny to dokument określający zapotrzebowanie energetyczne nieruchomości. Wymagany jest m.in. przy sprzedaży, wynajmie oraz przy wniosku o pozwolenie na użytkowanie. Jego brak może skutkować karą finansową.
+      </p>
   
+      <!-- Kafelki -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-gray-100 rounded-xl p-6 shadow transition-transform duration-300 hover:scale-105">
+          <h4 class="text-brandNavy font-bold text-lg mb-2">🛏 Budowa</h4>
+          <p class="text-gray-700 text-sm">Obowiązek dołączenia certyfikatu przy wniosku o pozwolenie na użytkowanie nowego budynku.</p>
+        </div>
+        <div class="bg-gray-100 rounded-xl p-6 shadow transition-transform duration-300 hover:scale-105">
+          <h4 class="text-brandNavy font-bold text-lg mb-2">💰 Dofinansowania</h4>
+          <p class="text-gray-700 text-sm">Konieczny przy ubieganiu się o dotacje na modernizację energetyczną domu.</p>
+        </div>
+        <div class="bg-gray-100 rounded-xl p-6 shadow transition-transform duration-300 hover:scale-105">
+          <h4 class="text-brandNavy font-bold text-lg mb-2">🔑 Sprzedaż / najem</h4>
+          <p class="text-gray-700 text-sm">Wymagany przy przekazaniu nieruchomości kupującemu lub najemcy.</p>
+        </div>
+        <div class="bg-gray-100 rounded-xl p-6 shadow transition-transform duration-300 hover:scale-105">
+          <h4 class="text-brandNavy font-bold text-lg mb-2">⚠️ Kary</h4>
+          <p class="text-gray-700 text-sm">Brak ważnego certyfikatu może skutkować grzywną do 5000 zł.</p>
+        </div>
+      </div>
+    </div>
+  </section>
   
+    
   <!-- Logika przełączania slajdów -->
   <script>
     const sliderTrack = document.getElementById('sliderTrack');
