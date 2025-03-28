@@ -117,7 +117,7 @@
       <a href="#kontakt" class="underline-hover font-medium text-base">Kontakt</a>
       <a
         href="#zamow"
-        class="ml-2 px-6 py-3 bg-brandOrange text-brandNavy font-semibold rounded-xl shadow-lg transition-all duration-300 hover:bg-brandNavy hover:text-white hover:shadow-brandNavy/40"
+        class="ml-2 px-6 py-3 bg-[#fcb744] text-brandNavy font-semibold rounded-xl shadow-lg transition-all duration-300 hover:bg-brandNavy hover:text-white hover:shadow-brandNavy/40"
       >
         Zamów certyfikat
       </a>
@@ -414,7 +414,7 @@
 
     <!-- Ikona -->
     <div class="flex justify-center mb-4">
-        <img src="certyfikat-ikona.png" alt="Ikona certyfikatu" class="w-16 h-16">
+        <img src="certyfikat.png" alt="Certyfikat" class="w-16 h-16">
       </div>
 
     <div class="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 relative z-10 text-center">
@@ -445,7 +445,195 @@
       </div>
     </div>
   </section>
-  
+
+<!-- SEKCA: O nas -->
+<section id="onas" class="relative min-h-screen py-20 bg-white scroll-mt-20 overflow-hidden flex items-center">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:items-stretch gap-12">
+
+    <!-- Fotografia z lewej strony z elementami dekoracyjnymi -->
+    <div class="relative w-full lg:w-1/2 flex items-center justify-center">
+      <!-- Elementy dekoracyjne tylko na desktopie -->
+      <div class="hidden lg:block absolute top-6 left-6 w-[90%] h-[90%] rounded-3xl bg-brandOrange opacity-20 z-0"></div>
+      <div class="hidden lg:block absolute top-12 left-12 w-[90%] h-[90%] rounded-3xl bg-brandNavy opacity-10 z-0"></div>
+
+      <!-- Zdjęcie -->
+      <div class="relative z-10 rounded-3xl overflow-hidden shadow-xl w-full">
+        <img src="slide1.png" alt="Zespół CertEnergo" class="w-full h-full object-cover rounded-3xl" />
+      </div>
+    </div>
+
+    <!-- Tekst po prawej stronie -->
+    <div class="w-full lg:w-1/2 flex flex-col justify-center">
+      <h2 class="text-sm font-semibold uppercase tracking-wider text-brandNavy mb-2">Poznaj nasz zespół</h2>
+      <h3 class="text-3xl sm:text-4xl font-bold text-brandNavy mb-6">Kim jesteśmy i jak działamy?</h3>
+      <p class="text-gray-700 text-base sm:text-lg mb-6">
+        CertEnergo to zespół ekspertów z wieloletnim doświadczeniem w branży energetycznej i budowlanej.
+        Naszym celem jest zapewnienie Ci szybkiego i profesjonalnego wsparcia w zakresie świadectw charakterystyki energetycznej.
+      </p>
+      <ul class="space-y-4 text-gray-700">
+        <li>✔ Doświadczony zespół specjalistów</li>
+        <li>✔ Certyfikowani audytorzy energetyczni</li>
+        <li>✔ Posiadamy ubezpieczenie OC działalności</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- SEKCA: Kontakt -->
+<section id="kontakt" class="py-12 bg-white scroll-mt-20 min-h-screen flex items-center">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+      <!-- Lewa kolumna: dane kontaktowe -->
+      <div class="flex flex-col justify-start pt-0">
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-brandNavy mb-2">Dane kontaktowe</h2>
+        <h3 class="text-3xl sm:text-4xl font-bold text-brandNavy mb-4">Skontaktuj się z nami</h3>
+        <p class="text-gray-700 text-base sm:text-lg mb-10 max-w-md">
+          Dowiedz się więcej kontaktując się z nami - chętnie pomozemy!
+        </p>
+
+        <ul class="space-y-6 text-gray-700">
+          <li class="flex items-start gap-4">
+            <div class="p-3 rounded-full bg-[#fef7ec]">
+              <img src="adres.png" alt="Adres" class="w-6 h-6" />
+            </div>
+            <div>
+              <span>Adres:</span><br/>
+              <span class="text-brandNavy font-semibold">Kołłątaja 8A, 44-230, Czerwionka-Leszczyny</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <div class="p-3 rounded-full bg-[#fef7ec]">
+              <img src="mail.png" alt="E-mail" class="w-6 h-6" />
+            </div>
+            <div>
+              <span>E-Mail:</span><br/>
+              <span class="text-brandNavy font-semibold">kontakt@certenergo.pl</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <div class="p-3 rounded-full bg-[#fef7ec]">
+              <img src="telefon.png" alt="Telefon" class="w-6 h-6" />
+            </div>
+            <div>
+              <span>Telefon:</span><br/>
+              <span class="text-brandNavy font-semibold">+48 794 622 530</span>
+            </div>
+          </li>
+        </ul>
+        
+      </div>
+
+      <!-- Prawa kolumna: formularz kontaktowy -->
+      <div class="relative">
+        <div class="absolute inset-4 bg-brandOrange rounded-3xl opacity-80 -z-10"></div>
+        <form id="contactForm" class="bg-white rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] p-8 space-y-6" method="POST">
+          <h3 class="text-2xl font-bold text-brandNavy mb-4">Formularz Do Kontaktu</h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="text" name="Imię" placeholder="Imię*" required pattern="^[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ\- ]{1,30}$" class="border p-3 rounded" />
+            <input type="text" name="Nazwisko" placeholder="Nazwisko*" required pattern="^[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ\- ]{1,30}$" class="border p-3 rounded" />
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="email" name="E-mail" placeholder="E-mail*" required class="border p-3 rounded" />
+            <input type="tel" name="Telefon" placeholder="Telefon" pattern="^[0-9+()\- ]{6,20}$" class="border p-3 rounded" />
+          </div>
+
+          <textarea name="Wiadomość" rows="4" placeholder="Wiadomość" class="border p-3 rounded w-full resize-none"></textarea>
+
+          <button type="submit" class="bg-brandNavy text-white py-3 px-6 rounded w-full hover:bg-brandOrange hover:text-brandNavy transition-colors duration-300">
+            Wyślij
+          </button>
+        </form>
+
+        <!-- Alert potwierdzenia -->
+        <div id="alertSuccess" class="hidden fixed bottom-6 right-6 bg-green-500 text-white px-6 py-4 rounded-lg shadow-lg z-50 flex items-center gap-4">
+          <span>Wiadomość została wysłana!</span>
+          <div class="h-1 w-full bg-white/30 rounded overflow-hidden absolute left-0 bottom-0">
+            <div class="h-full bg-white animate-alertbar"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes shrinkbar {
+    0% { width: 100%; }
+    100% { width: 0%; }
+  }
+  .animate-alertbar {
+    animation: shrinkbar 4s linear forwards;
+  }
+</style>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    // Tu tylko symulacja i czyszczenie
+    form.reset();
+
+    const alert = document.getElementById("alertSuccess");
+    alert.classList.remove("hidden");
+
+    setTimeout(() => {
+      alert.classList.add("hidden");
+    }, 4000);
+  });
+</script>
+
+
+<!-- SEKCA: Stopka -->
+<footer class="bg-brandNavy text-white pt-12 px-0">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6">
+
+    <!-- Kolumna 1: Informacje -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Informacje</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Regulamin</a></li>
+        <li><a href="#" class="hover:underline">Polityka prywatności</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolumna 2: Adres -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Adres</h4>
+      <p class="text-sm">Kołłątaja 8A,<br/>44-230 Czerwionka-Leszczyny</p>
+      <p class="text-sm mt-2">Tel: +48 794 622 530</p>
+    </div>
+
+    <!-- Kolumna 3: CTA -->
+    <div class="md:col-span-2 flex items-center md:justify-end">
+      <a href="#zamow" class="bg-brandOrange text-brandNavy font-semibold py-3 px-6 rounded-xl shadow-lg hover:bg-white transition duration-300">
+        Zamów certyfikat
+      </a>
+    </div>
+  </div>
+
+  <!-- Pasek dolny na białym tle -->
+  <div class="w-full bg-white text-brandNavy mt-12 border-t border-white/20 pt-6 pb-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm px-6">
+      <!-- Logo z lewej -->
+      <div>
+        <img src="logo_transparent.png" alt="CertEnergo" class="h-8" />
+      </div>
+      <!-- Tekst z prawej -->
+      <div class="mt-4 md:mt-0">
+        <strong>© 2025 CertEnergo. Wszystkie prawa zastrzeżone.</strong>
+      </div>
+    </div>
+  </div>
+</footer>
+
     
   <!-- Logika przełączania slajdów -->
   <script>
